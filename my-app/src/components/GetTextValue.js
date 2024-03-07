@@ -12,7 +12,7 @@ function GetValue() {
       {text ? <h1>{data}</h1> : null}
 
       <input type="text" onChange={GetData} />
-      <button onClick={() => setText(true)}>print text</button>
+      <button onClick={() => setText(!text)}>print text</button>
     </div>
   );
 }
