@@ -1,6 +1,18 @@
 import "../App.css";
-import UseEffectWithState from './UseEffectWithState.js'
-import Hooks from './Hooks.js'
+import "../styles.css";
+import "../custom.module.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import PureCompo from "./PureCompo.js";
+import LiftingStateUp from "./LiftingStateUp.js";
+import ReuseCompo from "./ReuseCompo.js";
+import NestedArray from "./NestedList.js";
+import HandleArray from "./HandlingArray.js";
+import StyledComponent from "./StyledComponents.js";
+import WaysToApplyCss from "./WaysToApplyCss.js";
+import UseEffectWithProps from "./UseEffectWithProps.js";
+import UseEffectWithState from "./UseEffectWithState.js";
+import Hooks from "./Hooks.js";
 import Unmount from "./Unmount.js";
 import LifeCycle from "./ReactLifecycle.js";
 import ShouldComponentUpdateMethod from "./ShouldComponentUpdate.js";
@@ -18,9 +30,16 @@ import Simple from "./FuncCompo.js";
 function App() {
   return (
     <div className="App" style={{ backgroundColor: "lightgrey" }}>
-   
-      <UseEffectWithState/>
-      <Hooks/>
+      <PureCompo />
+      <LiftingStateUp />
+      <ReuseCompo />
+      <NestedArray />
+      <HandleArray />
+      <StyledComponent />
+      <WaysToApplyCss />
+      <UseEffectWithProps />
+      <UseEffectWithState />
+      <Hooks />
       <Unmount />
       <ShouldComponentUpdateMethod />
       <LifeCycle />
