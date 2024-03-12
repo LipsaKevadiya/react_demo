@@ -2,7 +2,15 @@ import "../App.css";
 import "../styles.css";
 import "../custom.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../FormStyles.css";
 
+import UncontrolledCompo from "./UncontrolledCompo.js";
+import ControlledCompo from "./ControlledCompo.js";
+import ForwardRef from "./ForwardRef.js";
+import UseRef from "./UseRef.js";
+import Ref from "./RefWithClassCompo.js";
+// import UseMemo from "./UseMemo2.js";
+import UseMemo from "./UseMemo.js";
 import PureCompo from "./PureCompo.js";
 import LiftingStateUp from "./LiftingStateUp.js";
 import ReuseCompo from "./ReuseCompo.js";
@@ -30,6 +38,13 @@ import Simple from "./FuncCompo.js";
 function App() {
   return (
     <div className="App" style={{ backgroundColor: "lightgrey" }}>
+      <UncontrolledCompo />
+      <ControlledCompo />
+      <ForwardRef />
+      <UseRef />
+      <Ref />
+      <UseMemo />
+
       <PureCompo />
       <LiftingStateUp />
       <ReuseCompo />
