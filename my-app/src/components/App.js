@@ -4,6 +4,12 @@ import "../custom.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../FormStyles.css";
 
+import GetApiData from "./GetApiData";
+import DynamicRounting from "./routing/DynamicRouting";
+import Routing from "./routing/Route";
+import Hoc from "./HighOrderCompo";
+import ReactMemoParent from "./ReactMemoParent.js";
+import ConvertUseEffect from "./ConvertUseEffect.js";
 import UncontrolledCompo from "./UncontrolledCompo.js";
 import ControlledCompo from "./ControlledCompo.js";
 import ForwardRef from "./ForwardRef.js";
@@ -38,6 +44,12 @@ import Simple from "./FuncCompo.js";
 function App() {
   return (
     <div className="App" style={{ backgroundColor: "lightgrey" }}>
+      <GetApiData />
+      <DynamicRounting />
+      <Routing />
+      <Hoc />
+      <ReactMemoParent />
+      <ConvertUseEffect />
       <UncontrolledCompo />
       <ControlledCompo />
       <ForwardRef />

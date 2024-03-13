@@ -16,9 +16,17 @@ function UncontrolledCompo() {
     <div className="your-form">
       <h1>uncontrolled components that handled directly through DOM</h1>
       <form onSubmit={handleSubmt}>
-        <input type="text" ref={InputRef} />
-        <input type="text" ref={InputRef2} />
-        <input type="text" id="input3" />
+        <div>
+          <input type="text" ref={InputRef} />
+        </div>
+        <div>
+          <input type="text" ref={InputRef2} />
+        </div>
+        <div>
+          {" "}
+          <input type="text" id="input3" />
+        </div>
+
         <button>Submit</button>
       </form>
     </div>
