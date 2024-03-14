@@ -33,7 +33,7 @@ function PostApiData() {
         }}
         name="userId"
       />
-      <br /> <br />
+
       <input
         type="text"
         value={title}
@@ -42,7 +42,7 @@ function PostApiData() {
         }}
         name="title"
       />
-      <br /> <br />
+
       <input
         type="text"
         value={body}
@@ -51,7 +51,7 @@ function PostApiData() {
         }}
         name="body"
       />
-      <br /> <br />
+
       <button type="button" onClick={SaveUser}>
         Save New User
       </button>

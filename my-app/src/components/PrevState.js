@@ -2,16 +2,23 @@ import { useState } from "react";
 
 function PrevState() {
   const [count, setCount] = useState(1);
+
   function Update() {
-    let random = Math.floor(Math.random() * 10);
-    setCount((prev) => {
-      console.warn(prev);
-      if (prev < 5) {
-        alert("low value");
-      }
-      return random;
-    });
+    // let random = Math.floor(Math.random() * 10);
+    // setCount((prev) => {
+    //   console.warn(prev);
+    //   if (prev < 5) {
+    //     alert("low value");
+    //   }
+    //   return random;
+    // });
+    for (let i = 0; i < 5; i++) {
+      setCount((pre) => {
+        return pre + 1;
+      });
+    }
   }
+
   return (
     <div>
       <h1>{count}</h1>
