@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Table from "react-bootstrap/Table";
 function GetApiData() {
   const [data, setData] = useState([]);
+
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/posts").then((result) => {
       result.json().then((resp) => {

@@ -4,7 +4,10 @@ import "../custom.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../FormStyles.css";
 
-import GetApiData from "./GetApiData";
+import PrevState from "./PrevState.js";
+import DeleteApiData from "./with-api/DeleteApiData";
+import PostApiData from "./with-api/PostApiData";
+import GetApiData from "./with-api/GetApiData";
 import DynamicRounting from "./routing/DynamicRouting";
 import Routing from "./routing/Route";
 import Hoc from "./HighOrderCompo";
@@ -44,6 +47,9 @@ import Simple from "./FuncCompo.js";
 function App() {
   return (
     <div className="App" style={{ backgroundColor: "lightgrey" }}>
+      <PrevState />
+      <DeleteApiData />
+      <PostApiData />
       <GetApiData />
       <DynamicRounting />
       <Routing />
