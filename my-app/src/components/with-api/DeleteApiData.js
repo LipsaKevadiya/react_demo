@@ -84,22 +84,19 @@ function DeleteApiData() {
           value={id}
           onChange={(e) => setUser(e.target.value)}
         />
-        <br />
-        <br />
+
         <input
           type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
-        <br />
-        <br />
+
         <input
           type="text"
           value={body}
           onChange={(e) => setBody(e.target.value)}
         />
-        <br />
-        <br />
+
         <button onClick={updateUser}>Update user</button>
       </div>
     </div>
